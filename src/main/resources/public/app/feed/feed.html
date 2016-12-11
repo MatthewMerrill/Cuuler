@@ -1,0 +1,17 @@
+<div id="feedContainer">
+<div id="feed">
+  <div id="messagesContainer">
+  <div id="messages">
+    <div ng-repeat="message in messages" class="message">
+      <span><strong>{{message.name}}</strong>: {{message.message}}</span>
+    </div>
+  </div>
+  </div>
+
+  <div id="inputSection">
+    <form ng-submit="submitInput()">
+      <input class="messageInput" type="text" ng-model="inputBox">
+    </form>
+  </div>
+</div>
+</div>
